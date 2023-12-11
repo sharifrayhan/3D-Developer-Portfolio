@@ -8,16 +8,16 @@ const App = () => {
 
   return (
     <BrowserRouter>
-    <div className="relative z-0 bg-primary">
+    <div className="relative z-0 bg-[#1a1a1a]">
         <div className=" bg-hero-pattern bg-cover bg-no-repeat bg-center">
             <Navbar></Navbar>
             <Hero></Hero>
         </div>
         <About></About>
-        <Experience></Experience>
+        {/* <Experience></Experience> */}
         <Tech></Tech>
         <Works></Works>
-        <Feedbacks></Feedbacks>
+        {/* <Feedbacks></Feedbacks> */}
         <div className="relative z-0">
           <Contact></Contact>
           <StarsCanvas></StarsCanvas>

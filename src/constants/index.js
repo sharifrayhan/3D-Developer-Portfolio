@@ -3,6 +3,7 @@ import {
     backend,
     creator,
     web,
+ 
     javascript,
     typescript,
     html,
@@ -46,17 +47,17 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
-    },
-    {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    {
-      title: "Content Creator",
+      title: "Frontend Developer",
       icon: creator,
     },
+    {
+      title: "Mern Stack Developer",
+      icon: mobile,
+    },
+    // {
+    //   title: "Content Creator",
+    //   icon: creator,
+    // },
   ];
   
   const technologies = [

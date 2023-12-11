@@ -19,6 +19,11 @@
   display: block;
 }
 
+.my-card-shadow {
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1), 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+
 .black-gradient {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -48,6 +53,18 @@
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }
+
+.orange-gradient {
+  background: linear-gradient(90deg, #ff8c00 1.9%, #ffcc00 97.5%);
+  background: -webkit-linear-gradient(-90deg, #ff8c00 1.9%, #ffcc00 97.5%);
+}
+
+.purple-teal-gradient {
+  background: linear-gradient(90deg, #915eff 1.9%, #00b4cc 97.5%);
+  background: -webkit-linear-gradient(-90deg, #915eff 1.9%, #00b4cc 97.5%);
+}
+
+
 
 .orange-text-gradient {
   background: #f12711; /* fallback for old browsers */
