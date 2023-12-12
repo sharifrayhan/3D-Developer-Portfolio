@@ -1,21 +1,31 @@
 import {
     mobile,
-    backend,
+    ae,
+    ai,
+    axios,
+    firebase,
+    githubmain,
+    netlify,
+    nextjs,
+    pycharm,
+    python,
+    tanstack,
+    vercel,
+    vscode,
     creator,
     web,
- 
+    expressjs,
     javascript,
     typescript,
     html,
     css,
     reactjs,
-    redux,
+    mongoose,
     tailwind,
     nodejs,
     mongodb,
     git,
     figma,
-    docker,
     meta,
     starbucks,
     tesla,
@@ -24,7 +34,7 @@ import {
     jobit,
     tripguide,
     threejs,
-  } from "../assets";
+  } from "../assets/index.js";
   
   export const navLinks = [
     {
@@ -54,13 +64,9 @@ import {
       title: "Mern Stack Developer",
       icon: mobile,
     },
-    // {
-    //   title: "Content Creator",
-    //   icon: creator,
-    // },
   ];
   
-  const technologies = [
+  const languagesGoodAt = [
     {
       name: "HTML 5",
       icon: html,
@@ -70,50 +76,120 @@ import {
       icon: css,
     },
     {
-      name: "JavaScript",
+      name: "JavaScript ",
       icon: javascript,
     },
+  ];
+
+  const languagesExplore = [
     {
-      name: "TypeScript",
+      name: "Typescript",
       icon: typescript,
     },
     {
-      name: "React JS",
-      icon: reactjs,
+      name: "Python",
+      icon: python,
     },
+  ]
+  const frameworksComfortable = [
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "Express",
+      icon: expressjs,
     },
+  ]
+  const frameworksGoodAt = [
     {
       name: "Tailwind CSS",
       icon: tailwind,
     },
+  ]
+
+  const frameworksExplore = [
+    {
+      name: "Next JS",
+      icon: nextjs,
+    },
+  ]
+  const runtimeEnvironment = [
     {
       name: "Node JS",
       icon: nodejs,
     },
+  ]
+
+  const tools = [
+    {
+      name: "Git",
+      icon: git,
+    },
+    {
+      name: "Github",
+      icon: githubmain,
+    },
+    {
+      name: "Netlify",
+      icon: netlify,
+    },
+    {
+      name: "Vercel",
+      icon: vercel,
+    },
+    {
+      name: "Figma",
+      icon: figma,
+    },
+    {
+      name: "VS Code",
+      icon: vscode,
+    },
+    {
+      name: "Pycharm",
+      icon: pycharm,
+    },
+    {
+      name: "Adobe Illustrator",
+      icon: ai,
+    },
+
+  ]
+
+  const database = [
     {
       name: "MongoDB",
       icon: mongodb,
     },
     {
+      name: "Firebase",
+      icon: firebase,
+    },
+  ]
+
+
+  const librariesGoodAt = [
+    {
+      name: "React JS",
+      icon: reactjs,
+    },
+    {
+      name: "Axios",
+      icon: axios,
+    },
+    {
+      name: "Tanstack Query",
+      icon: tanstack,
+    },
+  ]
+
+  const librariesExplore = [
+    {
+      name: "Mongoose",
+      icon: mongoose,
+    },
+    {
       name: "Three JS",
       icon: threejs,
     },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
-  ];
+  ]
   
   const experiences = [
     {
@@ -263,5 +339,5 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services,languagesGoodAt,languagesExplore,runtimeEnvironment,frameworksComfortable,frameworksExplore,tools,database,librariesGoodAt,librariesExplore,frameworksGoodAt,  experiences, testimonials, projects };
   

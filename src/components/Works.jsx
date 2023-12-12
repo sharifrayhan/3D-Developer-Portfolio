@@ -18,7 +18,7 @@ const ProjectCard = ({
   return (
     <motion.div className="" variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <div
-        className={`bg-[#1f1f1f] flex gap-5 p-5 hover:scale-110  rounded-2xl w-full ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
+        className={`bg-[#1f1f1f]  flex gap-5 p-5 hover:scale-110  rounded-2xl w-full ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
 
       >
         <div className='relative w-full h-[230px]'>
