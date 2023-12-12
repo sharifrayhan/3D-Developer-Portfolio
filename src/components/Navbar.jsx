@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { menu, close } from "../assets";
+import DownloadButton from "./DownloadButton"; // Import your DownloadButton component
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -42,10 +43,8 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          {/* <img src={logo} alt='logo' className='w-9 h-9 object-contain' /> */}
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             Sharif Rayhan Nafi <span className=" text-[#b7401a]">.</span>
-            {/* <span className='sm:block hidden'> | JavaScript Mastery</span> */}
           </p>
         </Link>
 
@@ -53,11 +52,9 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              // Click kora thakle different color dekhabo, shobgular upor apply jate na hoy ejonno setActive e oitar title shoho set kore dicchi
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              // Click korlei active e konta click hoise sheita shoho set kortesi
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -65,22 +62,25 @@ const Navbar = () => {
           ))}
         </ul>
 
-{/* Small Devices er jonno */}
+       <div className="hidden lg:block">
+       <DownloadButton />
+       </div>
+
+        {/* Small Devices er jonno */}
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
-          // Toggle true hole close icon, na hole menu icon dekhabo
-            src={toggle ? close : menu} 
+            src={toggle ? close : menu}
             alt='menu'
             className='w-[28px] h-[28px] object-contain'
             onClick={() => setToggle(!toggle)}
           />
-{/* Toggle true hole ei div dekhacchi */}
           <div
             className={`${
               !toggle ? "hidden" : "flex"
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+              <DownloadButton></DownloadButton>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
