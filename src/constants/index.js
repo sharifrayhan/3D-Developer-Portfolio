@@ -1,6 +1,6 @@
 import {
     mobile,
-    ae,
+    reactdev,
     ai,
     axios,
     firebase,
@@ -30,9 +30,11 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
+   artvend,
+   dekhbo,
+   wandelo,
+    
+   
     threejs,
   } from "../assets/index.js";
   
@@ -59,6 +61,10 @@ import {
     {
       title: "Frontend Developer",
       icon: creator,
+    },
+    {
+      title: "React Developer",
+      icon: reactdev,
     },
     {
       title: "Mern Stack Developer",
@@ -275,16 +281,16 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Wandelo",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Wandelo offers an immersive experience for tourists and guides, connecting travelers with experienced tour guides and the best packages across different spots in Bangladesh with features like tour information, package booking, wishlist creation, and guide selection.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "mongoose",
           color: "green-text-gradient",
         },
         {
@@ -292,50 +298,49 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: wandelo,
+      source_code_link: "https://github.com/sharifrayhan/Wandelo-client-side",
+      live_link: "https://wandelo-client-sharifrayhan.netlify.app"
     },
     {
-      name: "Job IT",
+      name: "Artvend",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Artvend is a dynamic freelancing platform tailored for artists of all kinds to showcase their talents and connect with clients seeking unique artistic services.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "mongoDB",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "jwt",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: artvend,
+      source_code_link: "https://github.com/sharifrayhan/Artvend-Client-Side",
+      live_link: "https://artvend-client-sharifrayhan.netlify.app"
     },
     {
-      name: "Trip Guide",
+      name: "Dekhbo",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Dekhbo is a dynamic streaming platform that empowers users to explore premium content, both as creators and subscribers. Whether you're selling your creative work or seeking exclusive content, Dekhbo provides a seamless experience for content creators and consumers alike.",
       tags: [
         {
-          name: "nextjs",
+          name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "mongoDB",
           color: "green-text-gradient",
         },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: dekhbo,
+      source_code_link: "https://github.com/sharifrayhan/Dekhbo-Client-Side",
+      live_link: "https://dekhbo-client-sharifrayhan.netlify.app"
     },
   ];
   

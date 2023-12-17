@@ -1,3 +1,5 @@
+import './style.css'
+
 const DownloadButton = () => {
     const handleDownload = () => {
       const fileUrl = '../../public/Resume of Sharif Rayhan.pdf';
@@ -12,7 +14,7 @@ const DownloadButton = () => {
     };
   
     return (
-      <button onClick={handleDownload}>
+      <button className="button" onClick={handleDownload}>
         Download Resume
       </button>
     );

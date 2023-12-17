@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { menu, close } from "../assets";
-import DownloadButton from "./DownloadButton"; // Import your DownloadButton component
+import DownloadButton from "./Button/DownloadButton"; 
 
 const Navbar = () => {
   const [active, setActive] = useState("");

@@ -35,7 +35,7 @@ const Skillset = () => {
     <>
       <motion.div className="mb-8 text-right" variants={textVariant()}>
         <p className={styles.sectionSubText}>My</p>
-        <h2 className={styles.sectionHeadText}>Skillset.</h2>
+        <h2 className={styles.sectionHeadText}>Skillset<span className="text-[#915EFF]">.</span></h2>
       </motion.div>
 
       <div className=" flex flex-col gap-6">
