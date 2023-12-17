@@ -6,7 +6,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { textVariant } from "../utils/motion";
-import { ToastContainer, toast } from 'react-toastify';
+
 
 const Contact = () => {
   const formRef = useRef();
@@ -17,8 +17,8 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
-  const notifySendSuccess = () => toast.success("Thank you. I will get back to you as soon as possible.");
-  const notifySendFailed = () => toast.error("Ahh, something went wrong. Please try again.");
+  // const notifySendSuccess = () => toast.success("Thank you. I will get back to you as soon as possible.");
+  // const notifySendFailed = () => toast.error("Ahh, something went wrong. Please try again.");
 
   const handleChange = (e) => {
     const { target } = e;
@@ -50,7 +50,7 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          notifySendSuccess()
+          // notifySendSuccess()
           
 
           setForm({
@@ -62,16 +62,17 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.error(error);
-
-          notifySendFailed()
+          // notifySendFailed()
         }
       );
   };
 
   return (
+    
     <>
-    <ToastContainer></ToastContainer>
+  
           <motion.div className="mb-8 text-right" variants={textVariant()}>
+        
         <p className={styles.sectionSubText}>Reach out and</p>
         <h2 className={styles.sectionHeadText}>Let's Talk<span className="text-[#915EFF]">.</span></h2>
       </motion.div>

@@ -1,12 +1,18 @@
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
+import { Cursor , useTypewriter } from 'react-simple-typewriter'
 
 const Hero = () => {
   // Replace these URLs with your actual GitHub and LinkedIn profiles
   const githubUrl = "https://github.com/sharifrayhan";
   const linkedinUrl = "https://www.linkedin.com/in/sharifrayhannafi";
   const instagramUrl = "https://instagram.com/sharifrayhannafi";
+
+  const [text] = useTypewriter({
+    words: ["Web Developer, Pet Lover, Movie Buff!"],
+    loop: {}
+})
 
   return (
     <section className={`relative w-full h-screen mx-auto overflow-hidden`}>
@@ -28,7 +34,7 @@ const Hero = () => {
             <span className="text-[#915EFF]">Sharif Rayhan Nafi</span>
           </h1>
           <p className={`${styles.bannerSubText} mt-2 text-white text-center`}>
-            I develop websites and create awesome web experiences.
+          {text}<Cursor></Cursor>
           </p>
 
           <div className="flex gap-7 mt-5">
