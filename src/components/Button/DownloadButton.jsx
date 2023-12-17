@@ -2,7 +2,7 @@ import './style.css'
 
 const DownloadButton = () => {
     const handleDownload = () => {
-      const fileUrl = '../../public/Resume of Sharif Rayhan.pdf';
+      const fileUrl = '../../../public/Resume of Sharif Rayhan.pdf';
   
       const downloadLink = document.createElement("a");
       downloadLink.href = fileUrl;
